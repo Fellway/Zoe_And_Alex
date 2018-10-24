@@ -1,0 +1,279 @@
+/*======FONTS=======*/
+/*
+font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Muli', sans-serif;
+*/
+
+*{
+	box-sizing: border-box;
+}
+
+span, a {
+	color: #bd806e;
+	text-decoration: none;
+}
+
+span:hover{
+	color: #eda087;
+}
+/*=====RYTM PIONOWY ====*/
+
+h1,h2,h3,h4,h5,h6,hgroup,
+	ul,ol,dd,
+	p,figure,
+	pre,table,fieldset,hr {
+   	 	margin-bottom: 1rem;
+	}
+
+strong {
+	font-weight: bold;
+}
+
+/* ====== HEADER ==== */
+
+
+.cover{
+	display: table;
+	background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+}
+
+.wrapper{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.welcome{
+	background-color: hsla(100,0%,0%,.6);
+	width: 100%;
+	padding: 1rem 0;
+}
+
+
+header .tagline{
+	color: rgba(255, 255, 255, .9);
+	text-transform: uppercase;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.3rem;
+	letter-spacing: .15rem ;
+	position: relative;
+	display: inline-block;
+}
+
+header .tagline:after {
+	content:'';
+  display:block;
+  height:0.5em;
+  width: 60%;
+  margin:auto;
+  border-bottom: 1px solid white;
+}
+
+.names{
+	padding: 1.5rem 0;
+	color: #d2ba87;
+	font-size: 5rem;
+	font-family: 'Great Vibes', cursive;
+}
+
+.date {
+	color: rgba(255, 255, 255, .9);
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.2rem;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+/*===MAIN====*/
+main{
+	background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat;
+}
+
+.locations,
+.ceremony,
+.photos,
+.party,
+.gifts,
+.gifts2,
+.faq,
+.contact,
+.program{
+  padding: .5rem 1rem;
+  text-align: center;
+	color: #444349;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.program,
+.faq
+{
+	background-color: hsla(100,0%,0%,.6);
+	color: #d2ba87;
+}
+
+h1 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 3rem;
+	margin-top: 1rem;
+}
+
+h2{
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 1rem;
+}
+
+.ceremony,
+.photos,
+.party,
+.gifts, p {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.2rem;
+}
+
+img {
+	width: 40%;
+	margin-bottom: 1rem;
+}
+
+.program .tagline,
+.gifts .taglinegifts {
+	margin: 1.5rem;
+	font-size: 1.2rem
+}
+
+.program li {
+	margin: .5rem;
+	text-align: left;
+	font-size: .9rem;
+}
+
+.program .tagline{
+	font-style: italic;
+	font-family: 'Muli', sans-serif;
+}
+
+.ceremony:after,
+.party:after,
+.photos:after{
+	content: '';
+	display: block;
+	margin: auto;
+  width: 30%;
+  border-bottom: 3px solid #444349;
+}
+
+/*===FAQ===*/
+h3 {
+	font-size: 1.2rem;
+}
+.faq, h2{
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+}
+
+.faq p{
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+}
+
+.travel,
+.food,
+.other {
+	text-align: left;
+}
+
+
+.food:after,
+.other:after,
+.travel:after{
+	content: '';
+	display: block;
+	margin: auto;
+	margin-bottom: 1rem;
+  width: 50%;
+  border-bottom: 3px solid #d2ba87;
+}
+
+/*==== FOOTER ==== */
+footer{
+	width: 100%;
+	height: 8rem;
+	color: #fff;
+	display: table;
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+  font-size: .875rem;
+	background-color: #606060;
+	padding: 3rem;
+}
+
+
+.tablecell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* ==== DESKTOP =====*/
+@media (min-width: 768px){
+	.ceremony,
+	.photos,
+	.party,
+	.other,
+	.travel,
+	.food{
+		float:left;
+		width: 33%;
+		padding: 2rem;
+	}
+	
+	.faq h2{
+		text-align: left;
+	}
+	
+	.welcome{
+		width: 50%;
+		margin: auto;
+	}
+	.food:after,
+	.other:after,
+	.travel:after{
+		content: '';
+		display: block;
+		margin: auto;
+		margin-bottom: 1rem;
+		width: 50%;
+		border-bottom: 0px solid #d2ba87;
+}
+	
+	.program2 {
+		width: 30%;
+		margin: auto;
+	}
+	
+	.gifts img{
+		width: 13%;
+	}
+	
+	.locations:after,
+	.faq:after{
+		content: "";
+  	clear: both;
+  	display: block;
+	}
+	
+}
